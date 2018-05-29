@@ -1,3 +1,6 @@
+mod averager;
+
+
 #[cfg(test)]
 mod tests {
     #[test]
