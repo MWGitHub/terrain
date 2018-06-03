@@ -1,5 +1,5 @@
 [package]
-name = "rterrain-average-neighbor"
+name = "rterrain_average_neighbor"
 version = "0.1.0"
 authors = ["Michael Wang <mwwpublic@gmail.com>"]
 
@@ -7,3 +7,4 @@ authors = ["Michael Wang <mwwpublic@gmail.com>"]
 crate-type = ['dylib']
 
 [dependencies]
+rterrain_math = { version = "*", path = "../math" }

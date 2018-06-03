@@ -1,5 +1,5 @@
 [package]
-name = "rterrain-math"
+name = "rterrain_math"
 version = "0.1.0"
 authors = ["Mike W <mwwpublic@gmail.com>"]
 
