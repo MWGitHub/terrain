@@ -1,0 +1,9 @@
+[package]
+name = "rterrain-math"
+version = "0.1.0"
+authors = ["Mike W <mwwpublic@gmail.com>"]
+
+[lib]
+crate-type = ['dylib']
+
+[dependencies]
