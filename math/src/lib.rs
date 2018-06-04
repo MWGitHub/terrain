@@ -1,4 +1,4 @@
-pub mod array2d;
+pub mod array_2d;
 
 #[cfg(test)]
 mod tests {
@@ -6,4 +6,5 @@ mod tests {
     fn it_works() {
         assert_eq!(2 + 2, 4);
     }
+
 }
