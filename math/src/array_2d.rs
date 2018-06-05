@@ -8,7 +8,9 @@ pub trait Array2D<T> {
     }
 
     fn value_at_index(&self, index: usize) -> T;
-    fn value_at_coords(&self, x:usize, y:usize) -> T;
+    fn value_at_coords(&self, x: usize, y: usize, width: usize) -> T {
+        self.value_at_index(self.coords_to_index(x, y, width))
+    }
 }
 
 #[cfg(test)]
@@ -24,11 +26,6 @@ mod tests {
         fn value_at_index(&self, index: usize) -> usize {
             self.array[index]
         }
-
-        fn value_at_coords(&self, x: usize, y: usize) -> usize {
-            let index = self.coords_to_index(x, y, self.width);
-            self.array[index]
-        }
     }
 
     #[test]
@@ -36,7 +33,7 @@ mod tests {
     fn it_does_not_allow_out_of_bounds() {
         let a = Foo { array: &[1], width: 1 };
 
-        a.value_at_coords(1, 2);
+        a.value_at_coords(1, 2, a.width);
     }
 }
 
