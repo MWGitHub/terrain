@@ -1,0 +1,11 @@
+[package]
+name = "terrain_average_neighbor"
+version = "0.1.0"
+authors = ["Michael Wang <mwwpublic@gmail.com>"]
+publish = false
+
+[lib]
+crate-type = ['lib']
+
+[dependencies]
+terrain_math = { version = "*", path = "../terrain_math" }

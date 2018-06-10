@@ -1,4 +1,6 @@
-mod averager;
+extern crate terrain_average_neighbor;
+
+//mod averager;
 
 
 #[cfg(test)]

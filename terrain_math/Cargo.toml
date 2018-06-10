@@ -1,9 +1,13 @@
 [package]
-name = "rterrain_math"
+name = "terrain_math"
 version = "0.1.0"
 authors = ["Mike W <mwwpublic@gmail.com>"]
+publish = false
 
 [lib]
 crate-type = ['dylib']
+test = true
+doctest = true
+bench = true
 
 [dependencies]
