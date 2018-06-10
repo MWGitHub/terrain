@@ -1,5 +1,1 @@
-mod terrain_math {
-
-}
-
-extern crate terrain_math;
+pub mod array_2d;

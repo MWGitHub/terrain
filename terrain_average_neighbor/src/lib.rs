@@ -1,5 +1,3 @@
-extern crate terrain_average_neighbor;
-
 //mod averager;
 
 
